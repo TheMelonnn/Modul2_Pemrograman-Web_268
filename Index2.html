@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CodeLab 2</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="main_box">
+            <form>
+                <label>Nama Lengkap : </label> <br/>
+                <input type="text" id="name" value=""> <br/>
+                <label>Email : </label> <br/>
+                <input type="text" id="email" value=""> <br/>
+                <label>Alamat : </label> <br/>
+                <textarea id="alamat"></textarea> <br/>
+                <input type="button" onclick="validate()" value="Submit">
+                <br/><br/>
+            </form>
+        </div>
+
+    <script>
+        function validate(){
+            var nama = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var alamat = document.getElementById("alamat").value;
+        
+            if (nama == "" || email == "" || alamat =="") {
+                alert("Anda harus mengisi data dengan lengkap!");
+            } else {
+                alert("Data Berhasil di Input");
+            }
+        }
+    </script>
+    </body>
+</html>
